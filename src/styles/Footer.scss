@@ -10,7 +10,10 @@
   margin: 0 auto; 
 
   .footer__logo {
-    margin-bottom: 1rem; 
+    margin: 2rem; 
+    max-width: 120px;
+    height: auto;
+    max-height: 80px; 
   }
 
   .footer__copyright {
@@ -20,6 +23,7 @@
   }
 
   .footer__textFooter {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-bottom:2rem;
   }
 }

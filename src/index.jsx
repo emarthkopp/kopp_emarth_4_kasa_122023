@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Error from "./components/Error";
 import About from "./components/About";
 import Home from "./components/Home";
+import AccomodationDetail from "./components/AccomodationDetail"; 
 
 
 const container = document.getElementById('root');
@@ -21,6 +22,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About />} />
+        <Route path="/accommodation/:id" element={<AccomodationDetail />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

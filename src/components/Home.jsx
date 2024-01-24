@@ -4,6 +4,9 @@ import "../styles/Home.scss";
 import AccommodationCard from "./AccomodationCard";
 import accomodationData from "../data/accomodationData";
 
+
+
+
 function Home() {
   return (
     <div className="home">
@@ -17,9 +20,10 @@ function Home() {
       </div>
       <div className="home__accommodation">
         <div className="home__accommodation-cards">
-          {accomodationData.map((accommodation, id) => (
+          {accomodationData.map((accommodation) => (
             <AccommodationCard
-              key={id}
+              key={accommodation.id}
+              id={accommodation.id}
               photo={accommodation.cover}
               title={accommodation.title}
             />

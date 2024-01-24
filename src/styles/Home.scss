@@ -53,11 +53,16 @@
   }
 
   .home__accommodation {
-    width: 90%;
+    width: 86%;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #F6F6F6;
+    padding:2rem;
+    border-radius: 15px;
+    ;
 
     .home__accommodation-cards {
       display: flex;

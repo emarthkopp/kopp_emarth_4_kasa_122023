@@ -1,32 +1,32 @@
 @import '../index.scss';
 
 .banner {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner__logo {
+  height: auto;
+  width: 15rem;
+  margin-top:3rem;
+  margin-left: 5rem;
+}
+
+.banner__navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $main-color;
+    text-decoration: none;
+    margin: 2.5rem; 
+    font-size:2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  
-  .banner__logo {
-	height: auto;
-	width: 8.5rem;
-	margin-top: 1.5rem;
-	margin-left: 1.5rem;
-  }
-  
-  .banner__navbar {
-	position: absolute;
-	top: 1.5rem;
-	right: 1.5rem;
-	display: flex;
-	align-items: center;
-  
-	a {
-	  color: $main-color;
-	  text-decoration: none;
-	  margin-left: 1rem;
-  
-	  &:hover {
-		text-decoration: underline;
-	  }
-	}
-  }
-  
+}
