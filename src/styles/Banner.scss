@@ -1,8 +1,32 @@
-.Kasa-logo {
+@import '../index.scss';
+
+.banner {
+	display: flex;
+	align-items: center;
+  }
+  
+  .banner__logo {
 	height: auto;
-	width: 10.5em;
+	width: 8.5rem;
+	margin-top: 1.5rem;
+	margin-left: 1.5rem;
+  }
+  
+  .banner__navbar {
 	position: absolute;
-	top: 1.5em;
-	left: 1.5em;
+	top: 1.5rem;
+	right: 1.5rem;
+	display: flex;
+	align-items: center;
+  
+	a {
+	  color: $main-color;
+	  text-decoration: none;
+	  margin-left: 1rem;
+  
+	  &:hover {
+		text-decoration: underline;
+	  }
+	}
   }
   
