@@ -1,0 +1,8 @@
+@import '../index.scss';
+
+.star {
+    color: #c0bdbd; 
+    &.full-star {
+      color:$main-color; 
+  }
+}

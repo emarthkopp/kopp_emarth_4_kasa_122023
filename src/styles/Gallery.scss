@@ -1,0 +1,60 @@
+.gallery {
+  position: relative;
+
+  .gallery__content {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+    }
+  }
+
+  // .gallery__nav {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   cursor: pointer;
+  //   font-size: 24px;
+  //   color: #fff;
+  //   background: rgba(0, 0, 0, 0.5);
+  //   padding: 10px;
+  //   z-index: 2; // Assurez-vous que les chevrons sont au-dessus de l'image
+  // }
+
+
+  .gallery__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 72px; 
+    color: #fff;
+    padding: 20px; 
+    z-index: 2; 
+  }
+
+  .gallery__nav:first-child {
+    left: 0;
+  }
+
+  .gallery__nav:last-child {
+    right: 0;
+  }
+
+  .gallery__index-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 20px; /* Ajustez la valeur selon vos besoins */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; // Assurez-vous que l'index est au-dessus de l'image
+  }
+}
