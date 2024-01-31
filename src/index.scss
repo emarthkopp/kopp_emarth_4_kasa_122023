@@ -13,11 +13,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: grid;
   grid-template-rows: 1fr auto;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  min-height: 100%;
+  position: relative;
+ 
 }
 
 $main-color: #FF6060;
@@ -28,5 +26,8 @@ $footer__text--color : #ffffff;
 
 $headerPhoto__text--color : #ffffff;
 
-$main-font : montserrat;
+@mixin text-shadow{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 

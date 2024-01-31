@@ -2,20 +2,17 @@
 
 .footer {
   background-color:$footer__background--color;
-  padding: 2rem; 
   color: $footer__text--color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto; 
-  position: fixed;
-  bottom: 0;
   width: 100%; 
-  
+  padding-bottom: 3.5em;
 
+ 
   .footer__logo {
-    margin: 2rem; 
-    max-width: 120px;
+    margin: 3rem; 
+    max-width: 140px;
     height: auto;
     max-height: 80px; 
   }
@@ -27,9 +24,9 @@
   }
 
   .footer__textFooter {
-    font-size: 2rem;
-    margin-bottom:2rem;
+    font-size: 1.5rem;
   }
+ 
 }
 
 

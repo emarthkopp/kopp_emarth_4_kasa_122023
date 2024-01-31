@@ -1,23 +1,25 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-//   Link,
-//   Navigate,
-} from "react-router-dom";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Error from "./components/Error";
+import About from "./components/About";
+import Home from "./components/Home";
+import AccomodationDetail from "./components/AccomodationDetail"; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div>
-   
+    <Router>
+      <Banner />
       <Routes>
-        <Route>
-          
-        </Route>
+        <Route path="/" element={<Home/>} />
+        <Route path="/About" element={<About />} />
+        <Route path="/accommodation/:id" element={<AccomodationDetail />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-      
-    </div>
+      <Footer />
+    </Router>
   );
 }
 

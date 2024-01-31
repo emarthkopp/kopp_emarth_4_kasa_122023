@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../styles/Gallery.scss';
 
 const Gallery = ({ pictures, currentIndex, handleClickPrev, handleClickNext }) => {

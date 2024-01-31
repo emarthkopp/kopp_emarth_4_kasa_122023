@@ -1,0 +1,46 @@
+@import '../index.scss';
+
+.container {
+    width: 85%;
+    margin: 2rem auto; 
+}
+
+h2 {
+    background-color: $main-color;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .fa-chevron-up {
+      transform: rotate(0deg);
+      transition: transform 0.3s;
+    }
+}
+
+.container__content {
+    padding-top: 0 ;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
+    p {
+        padding: 1rem;
+    }
+}
+
+.container.open {
+    h2 .fa-chevron-up {
+      transform: rotate(180deg);
+    }
+
+    .container__content {
+      max-height: 15rem;
+    }
+}

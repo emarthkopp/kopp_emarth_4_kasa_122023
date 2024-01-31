@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import accomodationData from '../data/accomodationData';
 import StarRating from './StarRating';
 import Gallery from './Gallery'; 
+import Description from './Description';
+import Equipments from './Equipments';
 import '../styles/AccomodationDetail.scss';
 
 function AccomodationDetail() {
@@ -14,7 +16,7 @@ function AccomodationDetail() {
     return <div>Hébergement non trouvé</div>;
   }
 
-  const { title, pictures, host, rating, location, tags } = accommodation;
+  const { title, pictures, host, rating, location, tags, description, equipments } = accommodation;
 
   const hostFullName = host && host.name ? host.name : "Nom de l'hôte non disponible";
   const [hostFirstName, hostLastName] = hostFullName.split(" ");
@@ -62,6 +64,10 @@ function AccomodationDetail() {
             {tag}
           </span>
         ))}
+      </div>
+      <div className="detail__info-container">
+        <Description description={description} />
+        <Equipments equipments={equipments} />
       </div>
     </div>
   );

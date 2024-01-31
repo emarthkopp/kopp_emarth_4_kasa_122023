@@ -4,6 +4,9 @@
   max-width: 1240px;
   margin: 0 auto;
   padding: 2rem;
+  margin-bottom: 1rem;
+ 
+
 
   .detail__photo {
     width: 1240px;
@@ -37,7 +40,7 @@
   }
   .gallery__index {
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    @include text-shadow;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -77,9 +80,10 @@
 
   .detail__title {
     text-align: right;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     color: $main-color;
+    background-color: #fff;
     margin-bottom: 0;
   }
 
@@ -106,6 +110,10 @@
       color: #fff;
       border-radius: 0.7rem;
     }
+  }
+  &__info-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
