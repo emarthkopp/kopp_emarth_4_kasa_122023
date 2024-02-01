@@ -40,7 +40,7 @@
 
       .home__photo--text {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $headerPhoto__text--color;
@@ -51,6 +51,7 @@
       }
     }
   }
+  
 
   .home__accommodation {
     width: 86%;
@@ -69,29 +70,6 @@
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
-
-      .accomodation-card {
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        overflow: hidden;
-        box-sizing: border-box;
-
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          object-position: center top;
-          display: block;
-        }
-
-        h3 {
-          margin: 0;
-          padding: 1rem;
-          color: white;
-          font-size: 1.2rem;
-          text-align: center;
-        }
-      }
     }
   }
 }

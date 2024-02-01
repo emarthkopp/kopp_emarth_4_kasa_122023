@@ -20,7 +20,7 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -79,12 +79,13 @@
   }
 
   .detail__title {
-    text-align: right;
+    text-align: left;
     font-size: 2rem;
     font-weight: 300;
     color: $main-color;
     background-color: #fff;
     margin-bottom: 0;
+    padding:  1rem 0 0 0;
   }
 
   .detail__location {

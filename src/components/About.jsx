@@ -11,10 +11,8 @@ function About() {
           <div className="about__photo">
             <img src={fond_about} alt="logo" />
           </div>
-        </div >
-        {/* <div className='about__collapse'> */}
+        </div>
         <CollapseAbout />
-        {/* </div> */}
       </div>
     );
   }
