@@ -1,32 +1,47 @@
 @import '../index.scss';
 
 .footer {
-  background-color:$footer__background--color;
+  background-color: $footer__background--color;
   color: $footer__text--color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   padding-bottom: 3.5em;
 
- 
-  .footer__logo {
-    margin: 3rem; 
-    max-width: 140px;
-    height: auto;
-    max-height: 80px; 
+    .footer__logo {
+      margin: 3rem;
+      max-width: 140px;
+      height: auto;
+      max-height: 80px;
+      @media (max-width: 375px) {
+        margin: 3rem 3rem 1rem 3rem ;
+      }
+    }
+
+  .footer__text {
+    @media (max-width: 375px) {
+      width: 8rem;
+      text-align: center;
+    }
+
+    .footer__text--copyright {
+      width: 1rem;
+      height: auto;
+      margin-right: 0.5rem;
+      @media (max-width: 375px) {
+        width: 0.6rem;
+      }
+    }
+
+    .footer__text--textFooter {
+      font-size: 1.5rem;
+      @media (max-width: 375px) {
+        font-size: 0.85rem;
+        
+        
+      }
+    }
   }
 
-  .footer__copyright {
-    width: 1rem; 
-    height: auto;
-    margin-right: 0.5rem;
-  }
-
-  .footer__textFooter {
-    font-size: 1.5rem;
-  }
- 
 }
-
-

@@ -2,6 +2,8 @@
 @import '../index.scss';
 .gallery {
   position: relative;
+ 
+ 
 
   .gallery__content {
     position: relative;
@@ -19,7 +21,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 72px; 
+    font-size: 6rem; 
     color: #fff;
     @include text-shadow;
     padding: 20px; 

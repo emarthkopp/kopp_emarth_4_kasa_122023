@@ -14,7 +14,7 @@ function Home() {
         <div className="home__header--photo">
           <img src={fond_home} alt="logo" />
           <span className="home__photo--text">
-            Chez vous, partout et ailleurs
+          Chez vous, partout et ailleurs
           </span>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/AccomodationCard.scss";
-import AccomodationDetail from "./AccomodationDetail";
 
 
 function AccommodationCard({ id, photo, title }) {

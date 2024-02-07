@@ -10,6 +10,12 @@
   width: 12rem;
   margin-top:3rem;
   margin-left: 5rem;
+    @media (max-width: 375px){
+      height: auto;
+      width:8rem;
+      margin-top: 1.5rem;
+      margin-left:1.2rem ;
+    }
 }
 
 .banner__navbar {
@@ -18,15 +24,33 @@
   right: 1.5rem;
   display: flex;
   align-items: center;
+    @media (max-width: 375px){
+      margin-top: 0.6rem;
+      margin-right: 0.5rem;
+    }
 
   a {
     color: $footer__background--color;
     text-decoration: none;
     margin: 2.5rem; 
     font-size:1.5rem;
+    @media (max-width: 375px){
+      margin: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase; 
+    }
 
     &:hover {
       text-decoration: underline;
     }
   }
+  @media (max-width: 375px){
+    position: absolute;
+    top: 1rem; 
+    right: 0.5rem; 
+  }
 }
+
+
+

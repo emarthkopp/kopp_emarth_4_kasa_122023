@@ -7,12 +7,18 @@
   align-items: center;
   position: relative;
   width: 100%;
+  @media (max-width: 375px){
+    margin-top: 1.5rem;
+  }
 
   .home__header {
     width: 90%;
     max-height: 220px;
     border-radius: 20px;
     overflow: hidden;
+      @media (max-width: 375px){
+        border-radius: 10px;
+      }
 
     .home__header--photo {
       position: relative;
@@ -26,7 +32,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.4); 
+        background: rgba(0, 0, 0, 0.7); 
         z-index: 1;
       }
 
@@ -36,6 +42,9 @@
         object-fit: cover;
         object-position: center 10%;
         display: block;
+        @media (max-width: 375px){
+          height: 6rem;
+        }
       }
 
       .home__photo--text {
@@ -48,9 +57,17 @@
         font-weight: 500;
         text-align: center;
         z-index:2;
+        @media (max-width: 375px){
+          font-size: 1.15rem;
+          font-weight: 900;
+          text-align: left; 
+          top: 50%;
+          left: calc(33% + 1rem);
+        }
       }
     }
   }
+  
   
 
   .home__accommodation {
@@ -63,7 +80,17 @@
     background-color: #F6F6F6;
     padding:2rem;
     border-radius: 15px;
-    ;
+    @media (max-width: 375px){
+      width:100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      justify-content: space-between;
+      background-color: #FFF;
+      padding:1.2rem 0 0.5rem 0;
+     
+     
+    }
+    
 
     .home__accommodation-cards {
       display: flex;
