@@ -1,8 +1,14 @@
 @import '../index.scss';
 
 .star {
+  padding-left: 0.5rem;
+  font-size: 1.25rem;
     color: #c0bdbd; 
     &.full-star {
       color:$main-color; 
+  }
+  @media (max-width: 375px) {
+    font-size: 0.75rem;
+    padding-left: 0.1rem;
   }
 }

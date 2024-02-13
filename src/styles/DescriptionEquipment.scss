@@ -4,6 +4,10 @@
   position: relative;
   margin-top: 2rem;
   width: 48%;
+  @media (max-width: 375px) {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 
 h2 {
