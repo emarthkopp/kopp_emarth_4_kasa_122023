@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 function Banner() {
   return (
-    <div>
-      <div className="banner">
-        <img src={logo} className="banner__logo" alt="logo" />
+    <div  className="banner">
+      <div className="banner__logo">
+        <img src={logo} className="banner__logo--image" alt="logo" />
       </div>
       <nav className= "banner__navbar">
         <Link to="/">Accueil </Link>

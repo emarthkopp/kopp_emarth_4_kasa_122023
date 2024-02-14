@@ -25,7 +25,7 @@
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 6rem; 
-    color: #fff;
+    color:$over__text--color;
     @include text-shadow;
     padding: 20px; 
     z-index: 2; 
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $over__text--color;
     padding: 8px;
     border-radius: 4px;
     position: absolute;

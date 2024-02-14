@@ -1,8 +1,8 @@
 @import '../index.scss';
 
 .footer {
-  background-color: $footer__background--color;
-  color: $footer__text--color;
+  background-color: #000000;
+  color: $over__text--color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,13 +14,13 @@
       max-width: 140px;
       height: auto;
       max-height: 80px;
-      @media (max-width: 375px) {
+     @include media-query{
         margin: 3rem 3rem 1rem 3rem ;
       }
     }
 
   .footer__text {
-    @media (max-width: 375px) {
+   @include media-query{
       width: 8rem;
       text-align: center;
     }
@@ -29,14 +29,14 @@
       width: 1rem;
       height: auto;
       margin-right: 0.5rem;
-      @media (max-width: 375px) {
+     @include media-query{
         width: 0.6rem;
       }
     }
 
     .footer__text--textFooter {
       font-size: 1.5rem;
-      @media (max-width: 375px) {
+     @include media-query{
         font-size: 0.85rem;
         
         

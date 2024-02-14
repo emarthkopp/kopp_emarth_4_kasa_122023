@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import "../styles/DescriptionEquipment.scss"; // Assurez-vous que ce chemin est correct
-
+import "../styles/DescriptionEquipment.scss"; 
 const Equipments = ({ equipments }) => {
   const [isOpen, setIsOpen] = useState(false);
 

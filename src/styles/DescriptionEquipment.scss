@@ -4,45 +4,41 @@
   position: relative;
   margin-top: 2rem;
   width: 48%;
-  @media (max-width: 375px) {
+
+  @include media-query {
     width: 100%;
     margin-top: 1rem;
   }
-}
 
-h2 {
-  background-color: $main-color;
-  border-radius: 0.5rem;
-  color: white;
-  padding: 10px;
-  margin: 0;
-  cursor: pointer;
-  user-select: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
 
-.chevron {
-  font-size: 20px;
-  transform: rotate(0deg);
-  transition: transform 0.3s;
-}
+  h2 {
+    background-color: $main-color;
+    border-radius: 0.5rem;
+    color:$over__text--color;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.description-content {
-  padding-left:1.5rem ;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  background-color: #F6F6F6; ;
-  border-radius: 0.5rem;
+  }
 
+  .description-content {
+    padding-left: 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    background-color: #F6F6F6;
+    border-radius: 0.5rem;
+
+  }
 }
 
 .description-container.open {
-  
-    .fa-chevron-up {
+
+  .fa-chevron-up {
     transform: rotate(180deg);
   }
 

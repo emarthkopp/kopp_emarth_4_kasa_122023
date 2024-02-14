@@ -22,14 +22,15 @@ body {
 
 $main-color: #FF6060;
 
-$footer__background--color : #000000;
-
-$footer__text--color : #ffffff;
-
-$headerPhoto__text--color : #ffffff;
+$over__text--color : #ffffff;
 
 @mixin text-shadow{
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
 }
 
+@mixin media-query {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
 

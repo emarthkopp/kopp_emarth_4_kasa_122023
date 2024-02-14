@@ -1,56 +1,64 @@
 @import '../index.scss';
 
+
 .banner {
-  display: flex;
-  align-items: center;
-}
+  max-width: 1440px;
 
-.banner__logo {
-  height: auto;
-  width: 12rem;
-  margin-top:3rem;
-  margin-left: 6rem;
-    @media (max-width: 375px){
+  .banner__logo {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+
+
+    .banner__logo--image {
       height: auto;
-      width:8rem;
-      margin-top: 1.5rem;
-      margin-left:1.2rem ;
-    }
-}
+      width: 12rem;
+      margin-top: 3rem;
+      margin-left: 6rem;
 
-.banner__navbar {
-  position: absolute;
-  top:2rem;
-  right: 3rem;
-  display: flex;
-  align-items: center;
-    @media (max-width: 375px){
+      @include media-query {
+        height: auto;
+        width: 8rem;
+        margin-top: 1.5rem;
+        margin-left: 1.2rem;
+      }
+    }
+  }
+
+  .banner__navbar {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+
+    @include media-query {
       margin-top: 0.6rem;
       margin-right: 0.5rem;
     }
 
-  a {
-    color: $footer__background--color;
-    text-decoration: none;
-    margin: 2.5rem; 
-    font-size:1.5rem;
-    @media (max-width: 375px){
-      margin: 0.75rem;
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase; 
+    a {
+      color: #000;
+      text-decoration: none;
+      margin: 2.5rem;
+      font-size: 1.5rem;
+
+      @include media-query {
+        margin: 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    &:hover {
-      text-decoration: underline;
+    @include media-query {
+      position: absolute;
+      top: 1rem;
+      right: 0.5rem;
     }
-  }
-  @media (max-width: 375px){
-    position: absolute;
-    top: 1rem; 
-    right: 0.5rem; 
   }
 }
-
-
-

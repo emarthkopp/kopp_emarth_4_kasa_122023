@@ -7,7 +7,7 @@
     &.full-star {
       color:$main-color; 
   }
-  @media (max-width: 375px) {
+  @include media-query {
     font-size: 0.75rem;
     padding-left: 0.1rem;
   }
