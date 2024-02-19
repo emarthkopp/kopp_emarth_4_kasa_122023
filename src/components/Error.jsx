@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../styles/Error.scss';
 
-
-
-
 function Error() {
     return (
       <div>
@@ -13,7 +10,7 @@ function Error() {
             Oups! la page que vous demandez n'existe pas.
           </div>
           <Link to="/" className="linkError">
-            Retourner sur la page d'accueil{" "}
+            Retourner sur la page d'accueil
           </Link>
         </div>
       </div>

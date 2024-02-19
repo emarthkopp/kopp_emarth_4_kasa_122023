@@ -8,9 +8,9 @@ import Equipments from "./Equipments";
 import "../styles/AccomodationDetail.scss";
 
 function AccomodationDetail() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const { id } = useParams();
-  const accommodation = accomodationData.find(
+  const [currentIndex, setCurrentIndex] = useState(0);// Déclaration de l'état local pour gérer l'index de l'image actuelle
+  const { id } = useParams();// Récupération de l'ID de l'hébergement depuis les paramètres d'URL
+  const accommodation = accomodationData.find(// Recherche de l'hébergement correspondant à l'ID
     (item) => item.id.toString() === id
   );
 
@@ -18,23 +18,15 @@ function AccomodationDetail() {
     return <div>Hébergement non trouvé</div>;
   }
 
-  const {
-    title,
-    pictures,
-    host,
-    rating,
-    location,
-    tags,
-    description,
-    equipments,
-  } = accommodation;
+  const { title, pictures, host, rating, location, tags, description, equipments} = accommodation;
 
   const hostFullName =
     host && host.name ? host.name : "Nom de l'hôte non disponible";
   const [hostFirstName, hostLastName] = hostFullName.split(" ");
   const hostPicture =
     host && host.picture ? host.picture : "Image de l'hôte non disponible";
-
+    
+// Fonctions pour gérer le clic sur les boutons précédent et suivant de la galerie d'images
   const handleClickPrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : pictures.length - 1

@@ -4,14 +4,15 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import '../styles/CollapseAbout.scss';
 
 const Collapse = () => {
+  // Utilisation de useState pour gérer l'état local openTabs, qui stocke les onglets ouverts
   const [openTabs, setOpenTabs] = useState([]);
-
+ // Fonction toggleDescription qui bascule l'état d'un onglet ouvert ou fermé en fonction de son index
   const toggleDescription = (index) => {
     setOpenTabs((prevTabs) => {
       if (prevTabs.includes(index)) {
-        return prevTabs.filter((tab) => tab !== index);
+        return prevTabs.filter((tab) => tab !== index);// Si l'index est présent dans openTabs, le supprimer pour fermer l'onglet
       } else {
-        return [...prevTabs, index];
+        return [...prevTabs, index];// Sinon, ajouter l'index à openTabs pour ouvrir l'onglet
       }
     });
   };

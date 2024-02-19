@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Gallery.scss';
 
 const Gallery = ({ pictures, currentIndex, handleClickPrev, handleClickNext }) => {
-  const showNav = pictures.length > 1;
+  const showNav = pictures.length > 1;// Vérifie s'il y a plus d'une image à afficher dans la galerie
 
   return (
     <div className="gallery">
